@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karabük Akıllı Ev</title>
+  <link rel="icon" href="ChatGPT Image 14 Eyl 2025 11_09_58.png" type="image/png">
+  <meta name="description" content="Karabük Akıllı Ev ile güvenlik, konfor ve enerji tasarrufunu bir arada yaşayın. Akıllı ev sistemleri hakkında bilgi alın ve hizmetlerimizi keşfedin.">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+ <!-- Üst Menü -->
+<header class="bg-white shadow-md fixed w-full z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <h1 class="text-2xl font-bold text-blue-600">Karabük Akıllı Ev</h1>
+
+    <!-- Hamburger Butonu (Mobil) -->
+    <div class="sm:hidden">
+      <button id="menu-btn" class="text-blue-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menü -->
+    <nav id="menu" class="hidden sm:flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-sm sm:text-base mt-2 sm:mt-0">
+      <a href="#home" class="hover:text-blue-500 font-medium">Ana Sayfa</a>
+      <a href="#about" class="hover:text-blue-500 font-medium">Hakkımızda</a>
+      <a href="#services" class="hover:text-blue-500 font-medium">Hizmetler</a>
+      <a href="#products" class="hover:text-blue-500 font-medium">Ürünler</a>
+      <a href="#blog" class="hover:text-blue-500 font-medium">Blog</a>
+      <a href="#contact" class="hover:text-blue-500 font-medium">İletişim</a>
+    </nav>
+  </div>
+</header>
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+  <!-- Ana Sayfa -->
+  <section id="home" class="h-screen bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center text-center text-white px-6">
+    <div data-aos="fade-up" class="max-w-2xl">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Evinizi Geleceğe Taşıyın</h2>
+      <p class="mb-6 text-lg md:text-xl">Akıllı ev sistemleri ile güvenlik, konfor ve enerji tasarrufunu bir arada yaşayın.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#services" class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Hizmetlerimizi Keşfedin</a>
+        <a href="#contact" class="bg-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition">Bize Ulaşın</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hakkımızda -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6" data-aos="fade-right">
+      <h3 class="text-3xl md:text-4xl font-bold text-blue-600 mb-6">Biz Kimiz?</h3>
+      <p class="text-lg md:text-xl mb-4">Karabük Akıllı Ev, akıllı ev teknolojilerini Karabük halkıyla buluşturmak için kurulmuş bir teknoloji girişimidir.</p>
+      <p class="text-lg md:text-xl">Misyonumuz, evlerinizi daha güvenli, konforlu ve tasarruflu hale getirmek; vizyonumuz ise Karabük’te akıllı ev sistemlerinin lider markası olmaktır. Teknolojiyi herkes için ulaşılabilir kılmak istiyoruz.</p>
+    </div>
+  </section>
+
+<!-- Hizmetler -->
+<section id="services" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl md:text-4xl font-bold text-blue-600 mb-12 text-center" data-aos="fade-up">Hizmetlerimiz</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Akıllı Aydınlatma -->
+      <div class="bg-gradient-to-tr from-white to-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Akıllı Aydınlatma</h4>
+        <p>Ev içi aydınlatmayı tek dokunuşla kontrol edin. Işık yoğunluğunu, renklerini ve zamanlamayı uygulama üzerinden ayarlayabilirsiniz.</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700 text-sm">
+          <li>Zamanlı açma-kapama</li>
+          <li>Enerji tasarruflu LED sistemler</li>
+          <li>Akıllı gece modu</li>
+        </ul>
+      </div>
+
+      <!-- Akıllı Güvenlik -->
+      <div class="bg-gradient-to-tr from-white to-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Akıllı Güvenlik</h4>
+        <p>Kameralar, hareket ve kapı/pencere sensörleriyle evinizi 7/24 koruyun. Uygulama ile anlık bildirim alın ve izleyin.</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700 text-sm">
+          <li>Hırsızlık ve yangın uyarıları</li>
+          <li>Uzaktan izleme ve kontrol</li>
+          <li>Gece görüşlü kameralar</li>
+        </ul>
+      </div>
+
+      <!-- Enerji Yönetimi -->
+      <div class="bg-gradient-to-tr from-white to-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Enerji Yönetimi</h4>
+        <p>Evdeki cihazlarınızın enerji kullanımını takip edin ve gereksiz tüketimi azaltın. Akıllı sayaçlar ve sensörler ile tasarruf edin.</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700 text-sm">
+          <li>Akıllı prizler ile cihaz kontrolü</li>
+          <li>Enerji tüketim raporları</li>
+          <li>Otomatik cihaz kapatma</li>
+        </ul>
+      </div>
+
+      <!-- Uzaktan Kontrol -->
+      <div class="bg-gradient-to-tr from-white to-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="300">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Uzaktan Kontrol</h4>
+        <p>Telefon veya tablet üzerinden evinizdeki tüm sistemleri yönetin. Hareket halindeyken bile güvenlik ve konfor sizle olsun.</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700 text-sm">
+          <li>Mobil uygulama ile tam kontrol</li>
+          <li>Bildirim ve alarm uyarıları</li>
+          <li>Programlanabilir otomasyon senaryoları</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Ürünler -->
+  <section id="products" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6" data-aos="fade-left">
+      <h3 class="text-3xl md:text-4xl font-bold text-blue-600 mb-10 text-center">Ürünlerimiz</h3>
+      <ul class="space-y-4 text-lg md:text-xl list-disc list-inside max-w-2xl mx-auto">
+        <li>Akıllı Prizler</li>
+        <li>Akıllı Röle ve Anahtarlar</li>
+        <li>Hareket ve Kapı Sensörleri</li>
+        <li>Akıllı Aydınlatma Sistemleri</li>
+        <li>Kamera ve Alarm Çözümleri</li>
+      </ul>
+    </div>
+  </section>
+
+ <!-- Blog / Bilgi Köşesi -->
+<section id="blog" class="py-20 bg-white">
+  <div class="container mx-auto px-6" data-aos="fade-up">
+    <h3 class="text-3xl md:text-4xl font-bold text-blue-600 mb-12 text-center">Bilgi Köşesi</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Akıllı Ev Nedir? -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Akıllı Ev Nedir?</h4>
+        <p class="text-gray-700 mb-2">Akıllı ev sistemleri, evinizi teknoloji ile yönetmenizi sağlayan çözümlerdir. Işıkları, prizleri, kameraları ve sensörleri tek bir uygulama üzerinden kontrol edebilirsiniz.</p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Konfor ve yaşam kolaylığı sağlar</li>
+          <li>Enerji tasarrufu ve maliyet kontrolü</li>
+          <li>Güvenlik ve acil durum yönetimi</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-2">İpucu: Akıllı ev teknolojisini kullanarak günlük yaşamınızı daha verimli hale getirin.</p>
+      </div>
+
+      <!-- Enerji Tasarrufu İpuçları -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Enerji Tasarrufu İpuçları</h4>
+        <p class="text-gray-700 mb-2">Akıllı ev sistemleri enerji tüketiminizi optimize eder. Gereksiz elektrik kullanımını azaltarak faturalarınızı düşürmenizi sağlar.</p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Işık ve cihazları otomatik zamanlayın</li>
+          <li>Akıllı priz ve sensörlerle tüketimi takip edin</li>
+          <li>LED ve enerji verimli cihazlar kullanın</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-2">İpucu: Akıllı termostat ile oda sıcaklıklarını ihtiyacınıza göre ayarlayın.</p>
+      </div>
+
+      <!-- Akıllı Ev Güvenliği -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Akıllı Ev Güvenliği</h4>
+        <p class="text-gray-700 mb-2">Kapı/pencere sensörleri, hareket algılama ve kameralar ile evinizin güvenliğini her an kontrol edin. Anlık bildirimler ile olası risklerden haberdar olun.</p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Hırsızlık ve yangın uyarıları</li>
+          <li>Uzaktan izleme ve kontrol</li>
+          <li>Programlanabilir alarm senaryoları</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-2">İpucu: Tatile çıkarken veya evde olmadığınızda sisteminizi aktif edin.</p>
+      </div>
+
+      <!-- Ekstra Blog Örnekleri -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="300">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Akıllı Aydınlatma ile Konfor</h4>
+        <p class="text-gray-700 mb-2">Odanın ışık seviyesini ve renklerini otomatik ayarlayarak hem enerji tasarrufu yapabilir hem de atmosfer yaratabilirsiniz.</p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Zamanlayıcı ve otomatik senaryolar</li>
+          <li>Akıllı telefon veya sesli komut ile kontrol</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-2">İpucu: Akşam saatlerinde loş ışık modunu kullanarak göz yorgunluğunu azaltın.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="400">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Uzaktan Ev Kontrolü</h4>
+        <p class="text-gray-700 mb-2">Telefon veya tablet üzerinden evinizi her yerden kontrol edin. Kapıları kilitleyin, ışıkları açıp kapatın, güvenliği sağlayın.</p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Uygulama üzerinden tam kontrol</li>
+          <li>Bildirimler ile anlık durum takibi</li>
+          <li>Otomatik senaryolar ile kolay yönetim</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-2">İpucu: Tatildeyken evinizi izleyerek güvenliği artırın.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="500">
+        <h4 class="font-semibold text-xl mb-2 text-blue-700">Akıllı Enerji İzleme</h4>
+        <p class="text-gray-700 mb-2">Cihazlarınızın enerji tüketimini analiz edin ve gereksiz tüketimi önleyin. Akıllı sayaçlar ile faturalarınızı optimize edin.</p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Enerji kullanım raporları</li>
+          <li>Akıllı prizler ile otomatik kapatma</li>
+          <li>Çevre dostu ve tasarruflu çözümler</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-2">İpucu: Günlük ve aylık enerji raporlarını kontrol ederek tasarruf sağlayın.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- İletişim -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6" data-aos="fade-right">
+      <h3 class="text-3xl md:text-4xl font-bold text-blue-600 mb-6 text-center">Bize Ulaşın</h3>
+      <p class="text-center mb-6 text-lg md:text-xl">Akıllı ev sistemleri hakkında daha fazla bilgi almak için bizimle iletişime geçin.</p>
+      <div class="text-center space-y-2 text-lg md:text-xl">
+        <p>📍 Karabük</p>
+        <p>📞 Telefon: +905061907748</p>
+       <p>💬 WhatsApp: 
+  <a href="https://wa.me/905061907748?text=Merhaba,%20akıllı%20ev%20hakkında%20bilgi%20almak%20istiyorum." 
+     target="_blank" 
+     class="text-blue-600 underline font-semibold">
+     Hemen Yazın
+  </a>
+</p>
+
+        <p>✉ E-posta: karabukakiliev@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner py-6 mt-10">
+    <div class="container mx-auto px-6 text-center text-gray-600 space-y-2">
+      <p>© 2025 Karabük Akıllı Ev – Tüm Hakları Saklıdır</p>
+      <div class="flex justify-center gap-4">
+        <a href="#" class="hover:text-blue-500 font-medium">Facebook</a>
+        <a href="#" class="hover:text-blue-500 font-medium">Instagram</a>
+        <a href="#" class="hover:text-blue-500 font-medium">WhatsApp</a>
+        <a href="#" class="hover:text-blue-500 font-medium">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+</body>
+</html>
