@@ -79,4 +79,6 @@ const addStaggerDelay = (selector, delay = 100) => {
 
 addStaggerDelay('.service-card', 150);
 addStaggerDelay('.product-card', 100);
+addStaggerDelay('.scenario-card', 150);
 addStaggerDelay('.blog-card', 150);
+addStaggerDelay('.testimonial-card', 150);
