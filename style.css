@@ -158,6 +158,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1rem;
 }
 
+.logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
 .logo-icon {
   font-size: 1.5rem;
 }
@@ -1069,13 +1075,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Animations */
+/* Fade-in animation - JS olmadan da içerik görünsün */
 .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.fade-in.visible {
+/* JavaScript yüklendiğinde animasyon için */
+.js-enabled .fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-enabled .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
