@@ -431,10 +431,10 @@ document.addEventListener('visibilitychange', () => {
 if ('serviceWorker' in navigator && location.protocol === 'https:') {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
-      .then(registration => {
-        console.log('✅ Service Worker registered');
+      .then(() => {
+        // Service Worker registered successfully
       })
-      .catch(err => {
+      .catch(() => {
         // Silent fail - SW is optional
       });
   });
