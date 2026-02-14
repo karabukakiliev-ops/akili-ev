@@ -424,18 +424,3 @@ document.addEventListener('visibilitychange', () => {
     pageVisibilityTime = Date.now();
   }
 });
-
-// ============================================
-// SERVICE WORKER REGISTRATION (for PWA - optional)
-// ============================================
-if ('serviceWorker' in navigator && location.protocol === 'https:') {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(() => {
-        // Service Worker registered successfully
-      })
-      .catch(() => {
-        // Silent fail - SW is optional
-      });
-  });
-}
